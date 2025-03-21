@@ -2,25 +2,22 @@
 // Chiedere all’utente di inserire una parola 
 // Creare una funzione per capire se la parola inserita è palindroma
 
-// utilizzare split, join e reverse
-// split ci permette di separare le parole o i caratteri
-// join ci restituisce l'array in una stringa
-// reversed ci capovolge l'ordine degli elementi
+// Chiedere all'utente un numero
+// Dichiarare la funzione ed evocarla
+// Dichiaro delle variabili all'interno della funzione
+// 
 
-// Dichiarare una variabile dove far inserire all'utente una parola
-// Dichiarare una funzione
-// Diamo un parametro alla funzione che ci servirà per la parola data
-// Usiamo split per separare i caratteri
-// Creiamo un ciclo per controllare la parola
+function isPalindrome(word) {
+    let pali;
+    let palireverse;
 
-// Richiamare la funzione
+    for(let i = word.lenght -1; i>=0; i--);{
+        
+    }
+
+    return
+}
 
 const userWord = prompt('Inserisci una parola');
 
-function paliWord(word){
-    let letters = userWord;
-
-    letters = word.split("");
-
-}
-
+let pali = isPalindrome(userWord);
