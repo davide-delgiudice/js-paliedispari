@@ -8,11 +8,17 @@
 // 
 
 function isPalindrome(word) {
-    let pali;
     let palireverse;
 
     for(let i = word.lenght -1; i>=0; i--);{
-        
+        palireverse = palireverse + word[i]
+    }
+
+    if(word === palireverse){
+        true
+    }
+    else{
+        false
     }
 
     return
