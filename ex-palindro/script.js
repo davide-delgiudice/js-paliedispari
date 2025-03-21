@@ -1,20 +1,15 @@
-// Palindroma
-// Chiedere all’utente di inserire una parola 
-// Creare una funzione per capire se la parola inserita è palindroma
-
-// Chiedere all'utente un numero
-// Dichiarare la funzione ed evocarla
-// Dichiaro delle variabili all'interno della funzione
-// 
-
+// dichiaro la funzione
 function isPalindrome(word) {
+    // dichiaro una variabile di appoggio
     let palireverse='';
 
+    // inizio il ciclo for
     for(let i = word.length -1; i>=0; i--){
         palireverse = palireverse + word[i];
         console.log(palireverse);
     }
 
+    // inizio una condizione if
     if(word === palireverse){
         console.log(`La parola ${word} è palindroma`)
     }
@@ -22,10 +17,13 @@ function isPalindrome(word) {
         console.log(`La parola ${word} non è palindroma`)
     }
 
+    // return della funzione
     return palireverse;
 }
 
+// faccio inserire all'utente una parola
 const userWord = prompt('Inserisci una parola');
 console.log(userWord);
 
+// evoco la funzione
 let pali = isPalindrome(userWord);

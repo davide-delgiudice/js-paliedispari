@@ -16,3 +16,12 @@ Come dovrebbe chiamarsi?
 Ho bisogno di parametri?
 Devo restituire un valore?
 Se sì, di che tipo?
+
+ESERCIZIO 1
+Chiedere all'utente una parola
+Dichiarare la funzione ed evocarla
+Dichiarare una variabile di appoggio all'interno della funzione
+Iniziare il ciclo for
+Far contare al ciclo la parola dell'utente dalla fine
+Inserire nella variabile di appoggio le lettere al contrario una ad una
+Aprire una condizione if per dichiarare se la parola è palindroma o meno
