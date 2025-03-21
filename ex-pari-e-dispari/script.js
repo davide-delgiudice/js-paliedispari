@@ -5,7 +5,7 @@
 // dichiaro una variabile di prompt per l'utente per il numero
 // dichiaro una funzione per la somma e la evoco
 // dichiaro una variabile che restituisca un numero randomico per il computer
-// effettuo la somma dei due valori
+// effettuo la somma dei due valori e la salvo in una variabile esterna
 // dichiaro una funzione per il pari o dispari e la evoco
 // effettuo un if per stabilire se la somma dei due valori è pari o dispari
 // dichiaro in console il vincitore in base alla scelta iniziale
@@ -20,15 +20,17 @@ function sumNum(value){
     return result;
 }
 
-function oddeven(trueResult){
-    if(trueResult % 2 === 0){
-        pari
+function oddeven(sumResult){
+    
+    if(sumResult % 2 === 0 && typeNum === 'pari'){
+        console.log('Hai vinto');
+    }
+    else if(sumResult % 2 !==0 && typeNum === 'dispari'){
+        console.log('Hai vinto');
     }
     else{
-        dispari
+        console.log('Hai perso');
     }
-
-    return
 }
 
 const typeNum = prompt('Scegli pari o dispari');
@@ -39,4 +41,4 @@ console.log(`Numero scelto dall\'utente ${userNum}`);
 
 let sum = sumNum(userNum)
 
-let winner = oddeven(result);
+let winner = oddeven(sum);
