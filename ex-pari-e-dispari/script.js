@@ -5,10 +5,17 @@
 // dichiaro una variabile di prompt per l'utente per il numero
 // dichiaro una funzione e la evoco
 // dichiaro una variabile che restituisca un numero randomico per il computer
-// effettuo la somma dei due valori
+// effettuo la somma dei due valori e la salvo in una variabile esterna
+// dichiaro una funzione e la evoco
 // effettuo un if per stabilire se la somma dei due valori è pari o dispari
 // dichiaro in console il vincitore in base alla scelta iniziale
 
-const tipoNum = prompt('Scegli pari o dispari');
+function sumNum(value){
+    let comNum = Math.floor(Math.random() * 5) +1;
+}
 
-const userNum = prompt('Scegli un numero da 1 a 5');
+const typeNum = prompt('Scegli pari o dispari');
+
+const userNum = parseInt(prompt('Scegli un numero da 1 a 5'));
+
+let sum = sumNum(userNum)
