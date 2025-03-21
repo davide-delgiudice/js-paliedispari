@@ -12,10 +12,18 @@
 
 function sumNum(value){
     let comNum = Math.floor(Math.random() * 5) +1;
+    console.log(`Numero scelto dal PC ${comNum}`);
+
+    let result = value + comNum;
+    console.log(`Somma dei due numeri ${result}`);
+
+    return result;
 }
 
 const typeNum = prompt('Scegli pari o dispari');
+console.log(typeNum);
 
 const userNum = parseInt(prompt('Scegli un numero da 1 a 5'));
+console.log(`Numero scelto dall\'utente ${userNum}`);
 
 let sum = sumNum(userNum)
