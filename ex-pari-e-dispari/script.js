@@ -33,10 +33,16 @@ function oddeven(sumResult){
     }
 }
 
-const typeNum = prompt('Scegli pari o dispari');
+let typeNum = prompt('Scegli pari o dispari');
+// for(; typeNum != 'pari' || typeNum != 'dispari'; ){
+//     typeNum = prompt('Hai inserito un termine sbagliato. Inseriscilo pari o dispari');
+// }
 console.log(typeNum);
 
-const userNum = parseInt(prompt('Scegli un numero da 1 a 5'));
+let userNum = parseInt(prompt('Scegli un numero da 1 a 5'));
+// for(; userNum > 5 || userNum <= 0; ){
+//     userNum = parseInt(prompt('Hai inserito un numero sbagliato. Inseriscilo di nuovo'));
+// }
 console.log(`Numero scelto dall\'utente ${userNum}`);
 
 let sum = sumNum(userNum)
