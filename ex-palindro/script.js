@@ -8,22 +8,24 @@
 // 
 
 function isPalindrome(word) {
-    let palireverse;
+    let palireverse='';
 
-    for(let i = word.lenght -1; i>=0; i--);{
-        palireverse = palireverse + word[i]
+    for(let i = word.length -1; i>=0; i--){
+        palireverse = palireverse + word[i];
+        console.log(palireverse);
     }
 
     if(word === palireverse){
-        true
+        console.log(`La parola ${word} è palindroma`)
     }
     else{
-        false
+        console.log(`La parola ${word} non è palindroma`)
     }
 
-    return
+    return palireverse;
 }
 
 const userWord = prompt('Inserisci una parola');
+console.log(userWord);
 
 let pali = isPalindrome(userWord);
